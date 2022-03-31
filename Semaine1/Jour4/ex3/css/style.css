@@ -71,40 +71,66 @@ background: radial-gradient(circle, rgba(255,91,27,1), rgba(0,251,92,1) 70%);
 
 /* début exo 03 background-position*/
 .img-1{ 
-    background-image: url('images/bg_image.jpg');
+    background-image: url('../images/bg_image.jpg');
 }
 .img-2{
+    background-image: url('../images/bg_image.jpg');
+    background-position: 50%;
 }
 .img-3{
+    background-image: url('../images/bg_image.jpg');
+    background-position: 100%;
 }
 .img-4{
+    background-image: url('../images/bg_image.jpg');
+    background-position: 0%;
 }
 /* fin exo 03 background-position*/
 
 /* début exo 04 background-repeat*/
 .img-5{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-repeat: no-repeat;
 }
 .img-6{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-repeat: repeat-x;
 }
 .img-7{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-repeat: repeat-y;
 }
 /* fin exo 04 background-repeat*/
 
 /* début exo 05 background-size*/
 .img-8{ 
+    background-image: url('../images/bg_image_petite.jpg');
+    background-size:60px;
 }
 .img-9{ 
+    background-image: url('../images/bg_image_petite.jpg');
+    background-size: 100px 200px;
 }
 .img-10{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-size: cover;
 }
 .img-11{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-repeat: no-repeat;
+    background-size: 400px 400px;
+    background-position: center;
 }
 /* fin exo 05 background-size*/
 
 /* début exo 06 background-attachement*/
 .img-12{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-attachment: fixed;
 }
 .img-13{
+    background-image: url('../images/bg_image_petite.jpg');
+    background-attachment: local;
 }
 /* fin exo 06 background-attachement*/
 
