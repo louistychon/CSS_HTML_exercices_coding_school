@@ -1,0 +1,165 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+}
+
+
+.container_top {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background: purple;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+}
+
+.container_top .logo1 {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.icon_global{
+    display:flex;
+    align-content:center;
+    justify-content: center;
+    padding:3%;
+    color:white;
+}
+
+li::marker{
+    color:grey;
+}
+
+.icon{
+    border:2px solid white;
+    padding:9px;
+    width:100%;
+    height:40%;
+    border-radius:50%;
+}
+
+.text_social{
+    text-transform: uppercase;
+    align-self:center;
+    margin-inline-start: 5px;
+}
+
+#champs_newsletter button {
+    background-color: lightgreen;
+    color: white;
+    border-radius: 5px;
+    border:0;
+}
+
+.logo1 {
+    justify-content: left;
+    width: 50px;
+    height: 50px;
+}
+
+.logo2 img {
+    width:50%;
+    margin-left: 2em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    width:100%;
+    overflow: hidden;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    text-transform: uppercase;
+    width:100%;
+}
+
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#contenu {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.liste {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.liste li {
+    padding: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: -2000;
+    left: 0;
+    background-color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+#section {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top:1%;
+}
+
+#section div a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    padding: 5px;
+}
+
+.copyright {
+    color: rgb(80, 77, 77);
+}
+
+#champs_newsletter {
+    margin-top: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+.testez {
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    align-self: center;
+    text-transform: uppercase;
+    width:30%;
+}
