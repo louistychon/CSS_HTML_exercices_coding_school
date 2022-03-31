@@ -1,0 +1,147 @@
+@keyframes glow { 
+    0% { background-color:red; }
+    50% { background-color:orange; }
+    100% { background-color:red; } 
+}
+
+/*exs index.html */
+
+#les_hover_01  > div {
+    height:150px;
+    width: 150px;
+    background-color: lightblue;
+}
+
+#les_hover_01:hover > div {
+    background-color: purple;
+}
+
+#les_hover_02  > div {
+    height: 150px;
+    width: 150px;
+    background-color: lightblue;
+}
+
+#les_hover_02:hover  > div  {
+    height: 200px;
+    width: 500px;
+}
+
+#le_focus_03  input[type="text"]:focus{
+  border:blue 10px solid;
+  border-radius:10px;
+}
+
+.transition_04{
+    background-color:yellow;
+    height: 150px;
+    width:150px;
+    transition: 4s;
+}
+
+.transition_04:hover{
+    background-color:red;
+
+}
+
+.transition_05{
+    background-color:orange;
+    height: 150px;
+    width:150px;
+    transition:2s;
+}
+
+.transition_05:hover{
+    background-color:purple;
+    border-radius:50%;
+}
+
+.transition_06{
+    background-color:grey;
+    height: 150px;
+    width:50px;
+    transition:3s;
+}
+
+.transition_06:active{
+    margin:300px;
+}
+
+.transition_07{
+   background-color:green;
+   height: 150px;
+    width:50px;
+    transition:3s;
+}
+.transition_07:active{
+    margin:80%;
+    transition:ease;
+}
+
+
+section {
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+
+section:last-child {
+    padding-bottom: unset;
+}
+
+.transition_08 {
+    height:150px;
+    width:50px;
+    background-color: skyblue;
+}
+
+.transition_08:active {
+    transform: translate(100vw, 0);
+    transition: 1.5s ease-out ;
+    border-radius: 50%;
+    background-color:purple;
+    height:50px;
+}
+
+.transition_09{
+    background-color: blue;
+    height:150px;
+    width:150px;
+}
+
+.transition_09_enfant{
+    background-color: lightblue;
+    height:20px;
+    width:20px;
+    transition: 3s;}
+
+.transition_09:active .transition_09_enfant{
+    background-color:red;
+}
+
+.transition_10{
+    height:100px;
+    width:100px;
+    background:yellow;
+}
+
+.transition_10:active{
+    transform: translate(80vw, 0);
+    transition: 1.5s ease-out ;
+    border-radius: 50%;
+    background-color:orange;
+}
+
+.transition_10_intrus{
+    height:40px;
+    width:40px;
+    background-color:skyblue;
+    border-radius: 50%;
+}
+
+.transition_10_intrus:active{
+    transform: translate(95vw, 0);
+    transition-duration: 1.2s ease-in-out;
+    background-color:blue;
+    border-radius: 0%;
+    position:absolute;    
+}

@@ -1,0 +1,42 @@
+header{
+    width:100%;
+    background-color:blue;
+    border-radius:20px;
+    height:10vh;
+}
+
+.container{
+    display:flex;
+    width:100%;
+}
+
+.container > article, nav, aside{
+    width:100%;
+}
+
+.container > nav{
+    order:-1;
+}
+
+article{
+    background-color: aqua;
+    border-radius:25px;
+}
+
+article, nav, aside{
+    height:70vh;
+}
+
+nav, aside{
+    background-color:red;
+    border-radius: 25px;
+    width : 50%;
+}
+
+footer{
+    width:100%;
+    background-color:blue;
+    border-radius:20px;
+    height:10vh;
+}
+
