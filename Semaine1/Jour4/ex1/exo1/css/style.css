@@ -1,28 +1,20 @@
-body{
-}
-
-section{
+section {
     background-color: burlywood;
-    display:flex;
-    height:100vh;
-    width:100%;
-    align-content: center;
 }
 
-.flex-container{
-    display:inline-flex;
-    align-content:center;
-    align-items:center;
-    justify-content: space-between;
+.flex-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    gap:10px;
 }
 
-.flex-item{
+.flex-item {
     background-color: red;
-   align-content: center;
-   align-items: center;
-   display:flex;
-   justify-content: center;
-   height:35%;
-   padding:25px;
-   margin:10px;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 25px;
 }

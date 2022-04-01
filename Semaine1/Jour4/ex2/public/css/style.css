@@ -1,9 +1,3 @@
-@keyframes glow { 
-    0% { background-color:red; }
-    50% { background-color:orange; }
-    100% { background-color:red; } 
-}
-
 /*exs index.html */
 
 #les_hover_01  > div {
@@ -122,11 +116,11 @@ section:last-child {
     height:100px;
     width:100px;
     background:yellow;
+    transition: 1.5s ease-in-out
 }
 
 .transition_10:active{
-    transform: translate(80vw, 0);
-    transition: 1.5s ease-out ;
+    transform: translate(75vw, 0);
     border-radius: 50%;
     background-color:orange;
 }
@@ -136,12 +130,12 @@ section:last-child {
     width:40px;
     background-color:skyblue;
     border-radius: 50%;
+    transition:1.5s;
 }
 
 .transition_10_intrus:active{
-    transform: translate(95vw, 0);
+    transform: translate(15vw, 0);
     transition-duration: 1.2s ease-in-out;
     background-color:blue;
-    border-radius: 0%;
-    position:absolute;    
+    border-radius: 0%;    
 }

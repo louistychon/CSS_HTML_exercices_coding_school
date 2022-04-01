@@ -1,8 +1,9 @@
-header{
+header,footer{
     width:100%;
     background-color:blue;
     border-radius:20px;
-    height:10vh;
+    height:13vh;
+    padding-left:5px;
 }
 
 .container{
@@ -25,18 +26,12 @@ article{
 
 article, nav, aside{
     height:70vh;
+    padding-left:5px;
+    margin:5px;
 }
 
 nav, aside{
-    background-color:red;
+    background-color:burlywood;
     border-radius: 25px;
     width : 50%;
 }
-
-footer{
-    width:100%;
-    background-color:blue;
-    border-radius:20px;
-    height:10vh;
-}
-
