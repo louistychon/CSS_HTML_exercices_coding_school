@@ -1,5 +1,8 @@
 .navbar{
 background-color: rgba(0,0,0,0.8);
+justify-content: center;
+align-items: cente;
+
 }
 
 .navbar-nav{
@@ -11,7 +14,5 @@ background-color: rgba(0,0,0,0.8);
 }
 
 nav{
-    margin:0 auto;
-    display:flex;
-    justify-content: center;
+    width:100%;
 }

@@ -6,7 +6,7 @@
     background-color: lightblue;
 }
 
-#les_hover_01:hover > div {
+#les_hover_01 > div:hover{
     background-color: purple;
 }
 
@@ -16,7 +16,7 @@
     background-color: lightblue;
 }
 
-#les_hover_02:hover  > div  {
+#les_hover_02  > div:hover  {
     height: 200px;
     width: 500px;
 }
@@ -73,13 +73,9 @@
 }
 
 
-section {
+section:not(:last-of-type){
     border-bottom: 1px solid black;
     padding-bottom: 50px;
-}
-
-section:last-child {
-    padding-bottom: unset;
 }
 
 .transition_08 {
@@ -120,9 +116,9 @@ section:last-child {
 }
 
 .transition_10:active{
-    transform: translate(75vw, 0);
     border-radius: 50%;
     background-color:orange;
+    margin-left:85%;
 }
 
 .transition_10_intrus{
@@ -134,7 +130,7 @@ section:last-child {
 }
 
 .transition_10_intrus:active{
-    transform: translate(15vw, 0);
+    margin-left:100%;
     transition-duration: 1.2s ease-in-out;
     background-color:blue;
     border-radius: 0%;    
