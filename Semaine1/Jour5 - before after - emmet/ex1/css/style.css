@@ -1,0 +1,79 @@
+#exo1 h1 {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+
+}
+
+#exo1 h1::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+#exo1 h1:hover::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    display: block;
+}
+
+#exo2 h1 {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+#exo2 h1::after {
+    content: '';
+    height: 2px;
+    transform:scaleX(0);
+
+    background-color: red;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+#exo2 h1:hover::after {
+    content: '';
+    height: 2px;
+    transform:scaleX(1);
+    background-color: red;
+    display: block;
+}
+
+#exo3, #exo4{
+    transform: translateX(25px);
+}
+
+#exo3 h1{
+   display:inline-block;
+   position:relative;
+}
+
+#exo3 h1::after{
+    border-bottom: 0px solid red;
+    content: '';
+    width:25px;
+    display:block;
+    position:absolute;
+    transform:scaleX(0);
+    transform:scaleY(1);
+    margin-bottom:25px;
+}
+
+#exo3 h1:hover::after{
+    content: '';
+    border-bottom-width:25px;
+    position:absolute;
+    transform:scaleY(4);
+    transform:scaleX(4);
+    transition: 1s;
+    z-index:-1;
+}
