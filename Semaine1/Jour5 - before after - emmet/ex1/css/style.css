@@ -33,7 +33,7 @@
 #exo2 h1::after {
     content: '';
     height: 2px;
-    transform:scaleX(0);
+    transform: scaleX(0);
 
     background-color: red;
     display: block;
@@ -43,37 +43,143 @@
 #exo2 h1:hover::after {
     content: '';
     height: 2px;
-    transform:scaleX(1);
+    transform: scaleX(1);
     background-color: red;
     display: block;
 }
 
-#exo3, #exo4{
+#exo3,
+#exo4 {
     transform: translateX(25px);
 }
 
-#exo3 h1{
-   display:inline-block;
-   position:relative;
-}
-
-#exo3 h1::after{
+#exo3 h1 {
+    display: inline-block;
+    position: relative;
     border-bottom: 0px solid red;
-    content: '';
-    width:25px;
-    display:block;
-    position:absolute;
-    transform:scaleX(0);
-    transform:scaleY(1);
-    margin-bottom:25px;
+    width: 60px;
+    height: 5px;
 }
 
-#exo3 h1:hover::after{
+#exo3 h1::after {
     content: '';
-    border-bottom-width:25px;
-    position:absolute;
-    transform:scaleY(4);
-    transform:scaleX(4);
-    transition: 1s;
-    z-index:-1;
+    height: 5px;
+    width: 60px;
+    display: block;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: 50% 0%;
+}
+
+#exo3 h1:hover::after {
+    width: 60px;
+    height: 100px;
+    z-index: -1;
+    transition: 1s ease;
+    transform: scaleY(-0.3);
+    transform-origin: 50% 0%;
+    background-color: red;
+}
+
+/* general
+
+#exo4 h1 {
+    display: inline-block;
+    position: relative;
+    background: none;
+    }
+
+/*border-top*/
+
+/* #exo4 h1::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: red;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+#exo4 h1:hover::before {
+    width: 110%;
+    height:2px;
+} */
+
+/*border-right*/
+
+/* #exo4 h1::after {
+    content: '';
+    height: 2px;
+    margin-left:10%;
+    width: 2px;
+    background-color: red;
+    border-right:0px red solid;
+    transition: height 2s linear border-right 2s linear;
+}
+
+#exo4 h1:hover::after {
+    transition-delay:1s;
+    border:1px red solid;
+    height: 20px;
+    width: 2px;
+}  */
+
+/*border-bottom*/
+
+/* #exo4 h1::after {
+    content: '';
+    height: 2px;
+    margin-left:10%;
+    width: 20px;
+    background-color: red;
+    border-bottom:0px red solid;
+    transition: height 2s linear border-right 2s linear;
+}
+
+#exo4 h1:hover::after {
+    transition-delay:1s;
+    border:1px red solid;
+    height: 2px;
+    width: 0px;
+}  */
+
+#exo4 {
+    position: relative;
+    width: max-content;
+}
+
+#exo4::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+}
+
+#exo4:hover::before {
+    visibility: hidden;
+    transition: width 2s, height 1s 2s, visibility 10s 4s;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+    width: 100%;
+    height: calc(100% - 2px);
+}
+
+#exo4::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom: 0%;
+    right: -2%;
+    visibility: hidden;
+
+}
+
+#exo4:hover::after {
+    visibility: visible;
+    transition: width 2s 3s, height 1s 5s, visibility 2s 3s;
+    width: 100%;
+    height: calc(100% - 2px);
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
 }
