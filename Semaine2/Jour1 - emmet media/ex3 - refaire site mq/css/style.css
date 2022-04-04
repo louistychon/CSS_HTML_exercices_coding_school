@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: roboto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -45,6 +45,7 @@ header {
 
 .flex-intro {
     display: flex;
+    justify-content: space-around;
 }
 
 .img-intro {
@@ -52,11 +53,9 @@ header {
     margin-left: 5%;
     margin-top:5%;
     width: 100%;
-    float: left;
 }
 
 .para-intro {
-    float: right;
     margin-left: 5%;
 }
 
@@ -150,16 +149,11 @@ h3{
 
 .outils {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .outils div {
-    padding: 50px;
-}
-
-.outils img {
-    margin-right: 100px;
+    padding:20px;
 }
 
 footer {
@@ -194,21 +188,23 @@ img {
 }
 
 .cgv {
+    background-color:#393a3b;
+    width:100%;
+    height:50px;
+    margin:auto;
     color: white;
-    float: right;
-    margin-right: 10px;
 }
 
-.flex-print {
-    display: flex;
-    flex-direction: column;
+.cgv > p{
+    float:right;
+    margin-right:20px;
 }
 
 @media screen and (max-width: 500px) {
 
     .flex-footer,
     .flex-intro,
-    .temps {
+    .temps, .outils{
         flex-direction: column;
         flex-wrap:wrap;
     }
@@ -226,6 +222,10 @@ img {
     .txtpackage{
         margin-left:none;
     }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    .outils{flex-wrap:wrap}
 }
 
 @media screen and (min-width: 501px) and (max-width: 950px) {
