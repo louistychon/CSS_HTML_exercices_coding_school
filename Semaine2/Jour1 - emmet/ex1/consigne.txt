@@ -1,0 +1,25 @@
+# Exercice à reproduire en EMMET
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="">Lien1</a></li>
+            <li><a href="">Lien2</a></li>
+            <li><a href="">Lien3</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h1>Première section</h1>
+        <p>lorem</p>
+      </section>
+      <section>
+        <h1>Contact</h1>
+        <label for="">Nom:</label>
+        <input type="text">
+        <label for="">Email:</label>
+        <input type="text">
+        <label for="">Message:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </section>
+      <footer><span>Copyrigth@nom</span></footer>

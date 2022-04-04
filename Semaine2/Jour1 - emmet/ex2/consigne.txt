@@ -1,0 +1,1 @@
+reproduire le html du site en photo via des raccourcis emmet
