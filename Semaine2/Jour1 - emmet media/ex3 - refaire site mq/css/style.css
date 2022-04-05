@@ -21,7 +21,6 @@ header {
 
 .logo-horizontal {
     position: absolute;
-    left: 5%;
     top: 5%;
 }
 
@@ -174,7 +173,7 @@ footer {
 .img-footer {
     display: flex;
     justify-content: space-evenly;
-    width:50%;
+    width:55%;
 }
 
 .flex-intro div{
@@ -183,6 +182,9 @@ footer {
 
 .img-footer div{
     margin-left: 15px;
+}
+.img-footer div>img{
+    width:100%;
 }
 
 .responsive {
@@ -214,6 +216,12 @@ footer {
     }
     .flex-footer div{
         margin-top:25px;
+        margin:auto;
+        justify-content: space-evenly;
+    }
+
+    .flex-footer h3{
+        text-align: center;
     }
 
     .flex-footer img{
@@ -223,6 +231,10 @@ footer {
         max-height: unset;
     }
 
+    .img-footer div{
+        margin-left: 15px;
+    }
+
     .temps div {
         width: 80%;
         height:100%;
@@ -230,9 +242,9 @@ footer {
     }
 
     .logo-horizontal {
-        display: block;
+        display: none;
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 2vh;
     }
 
     .temps-fin{
@@ -272,13 +284,13 @@ footer {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 760px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     .logo-horizontal {
     display: block;
     position: relative;
 }}
 
-@media screen and (min-width: 761px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     .logo-horizontal {
         display: block;
