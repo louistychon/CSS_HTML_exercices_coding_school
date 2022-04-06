@@ -15,10 +15,6 @@
         display: none;
     }
 
-    li{
-        border:1px solid white;
-    }
-
     .p-btn-fonce {
         height: 5vw;
     }
@@ -41,6 +37,10 @@
 @media (max-width: 768px) {
     .logo {
         display: none;
+    }
+
+    body{
+        width:100%;
     }
 
     nav {
@@ -81,7 +81,7 @@
     }
 
     .rose-item {
-        width: 60%;
+        width: 80%;
         display: block;
         margin-bottom: 1rem;
     }
