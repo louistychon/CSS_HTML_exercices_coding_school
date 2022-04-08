@@ -161,10 +161,6 @@ li>a{
     display:none;
 }
 
-.slowhorses_tvplus{
-    width:25%;
-}
-
 .slowhorses_h3{
     color:white;
 }
@@ -227,9 +223,9 @@ footer>hr{
 .slowhorses_tvplus_div{
     padding-top:5vh;
     margin-top: 5%;
-    width:10%;
+    width:20%;
     margin:auto;
-    padding-bottom: 25vh;
+    padding-bottom: 380px;
 }
 
 .ipad_air_img_div{
@@ -238,12 +234,23 @@ footer>hr{
     margin:auto;
 }
 
-.wwdc22_text{
-    margin-top:45vh;
-    line-height:150%;
+.wwdc22{
+    width:100%;
+    height:100%;
+    line-height:;
     color:#C4DEE3;
-    padding-left:5%;
-    padding-right: 5%;
+}
+.wwdc22_text{
+    padding:15% 15% 0% 15%;
+    padding-top:450px;
+    line-height: 1.5;
+}
+
+.wwdc_image{
+    position:absolute;
+    padding-top:400px;
+    width:30%;
+    margin:auto;
 }
 
 .business>.containertext{
