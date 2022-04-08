@@ -30,4 +30,17 @@
     #grid{
         grid-template-columns: 1fr;
     }
+    .container-col{
+        flex-wrap:wrap;
+        justify-content: flex-start;
+    }
+    .col{
+        flex-direction: row;
+        width:100%;
+    }
+
+    .row-copyright{
+        width:100%;
+    }
+
 }
