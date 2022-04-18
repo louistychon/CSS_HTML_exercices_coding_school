@@ -1,4 +1,11 @@
-@media screen and (max-width:1000px) {
+@media screen and (max-width:5000px){
+    .list-footer{
+        display:block;
+    }
+}
+
+
+@media screen and (max-width:1000px){
     .navbar>ul {
         display: none;
     }
@@ -82,21 +89,22 @@
         width: 100%;
     }
 
-    footer ul {
-        display: none;
-    }
 
     footer h3 {
         margin-top: 1%;
         border-bottom: 1px solid grey;
+        padding-bottom: 15px;
         font-weight: 100;
         width: 100%;
+        cursor: pointer;
+        position:relative;
+    
     }
 
     footer h3::after {
         content: "+";
-        width: 100%;
-        margin-left: auto;
-        text-align: right;
+        float: right;
+        margin-bottom: 15px;
+        margin-right: 10px;
     }
 }
